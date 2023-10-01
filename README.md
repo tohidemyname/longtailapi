@@ -1,1 +1,9 @@
-# longtailapi
+# An Empirical Study on the Long-tail Distribution of APIs
+
+##Summary
+
+APIs are intensively called in source files and are critical in development. To assist programming with APIs, researchers have proposed various approaches, which cover a wide range of research topics. With the recent advances in machine learning, most approaches are learning-based and need to observe many instances. Although they achieve good results in their evaluations, programmers complain that these approaches are not as effective as reported. In the security research community, we hear similar complaints about malware detection. 
+
+A highly cited study identifies that the complaints are partially caused by the different distributions between benchmarks and the wild. In the wild, only a small port of applications is malware, but most benchmarks contain almost the same number of malware and benign applications. When the distribution is changed, this study shows that the effectiveness of malware detectors is significantly reduced. The complaints about API-related approaches can be caused by similar reasons. However, there is no consensus on the distribution of API calls. Like malware, libraries have cold spots and hot spots. The effectiveness of learning-based approaches will be significantly reduced, if they have few instances for learning. Although these approaches work poorly on infrequent APIs, many researchers blindly believe that cold spots will ablate if more projects are introduced. As a result, even if many examples are presented to show that APIs from cold spots can be more useful than those from hot spots, many researchers criticize that there is no need for researching infrequent APIs since they believe that cold spots will ablate with more projects. The blind assumption hinders the research on infrequent APIs. To explore whether this assumption holds, in this paper, we conduct an empirical study. 
+
+
